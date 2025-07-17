@@ -1,12 +1,13 @@
 import React from 'react';
-import Hero from './Hero'
+import Hero from './Hero';
 
-const Homepage = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-        <Hero/>
-      {/* Quick Highlights */}
-      <div className="max-w-6xl mx-auto py-12 px-4">
+      <Hero />
+
+      {/* Quick Highlights - Full Width */}
+      <div className="w-full py-12 px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-bold mb-3 text-blue-800">Education</h3>
@@ -29,8 +30,8 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* Latest News/Updates */}
-      <div className="max-w-4xl mx-auto py-8 px-4">
+      {/* Latest News/Updates - Full Width */}
+      <div className="w-full py-8 px-4 md:px-12">
         <h2 className="text-2xl font-bold mb-6 text-center">Recent Achievements</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <ul className="space-y-4">
@@ -53,4 +54,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;
