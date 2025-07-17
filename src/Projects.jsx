@@ -44,17 +44,17 @@ const Project = () => {
     ],
     infrastructure: [
       {
-        title: "Milima-Kiburu Road",
+        title: "Mfupi to Mukuyuni Road",
         description: "Graded and improved 8km road connecting 3 villages to the main highway",
-        location: "Milima to Kiburu",
-        year: "2022",
+        location: "Mfupi to Mukuyuni",
+        year: "2024",
         status: "Completed"
       },
       {
         title: "Community Boreholes",
         description: "Drilled 5 boreholes providing clean water to over 2,000 households",
         location: "Cheptais, Nalondo, Kiburu",
-        year: "2021-2023",
+        year: "2023-2025",
         status: "Completed"
       },
       {
@@ -70,14 +70,14 @@ const Project = () => {
         title: "Dairy Cooperative Support",
         description: "Established cooperative with 2 milk cooling plants serving 150 farmers",
         location: "Milima Ward",
-        year: "2022",
+        year: "2024",
         status: "Completed"
       },
       {
         title: "Seed & Fertilizer Subsidy",
         description: "Provided subsidized farm inputs to 500 small-scale farmers annually",
         location: "Ward-wide",
-        year: "2021-Present",
+        year: "2024-Present",
         status: "Ongoing"
       }
     ],
