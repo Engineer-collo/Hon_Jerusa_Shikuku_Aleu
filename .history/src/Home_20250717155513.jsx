@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from './Hero'
+import Hero from ''
 
 const Homepage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-        <Hero/>
+
       {/* Quick Highlights */}
       <div className="max-w-6xl mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
