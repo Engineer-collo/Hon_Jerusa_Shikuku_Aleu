@@ -3,18 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About Section */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-blue-400">About Hon. Aleu</h3>
-            <p className="mb-4 text-gray-300">
-              Jerusa Shikuku Aleu is the Member of County Assembly for Milima Ward, 
-              dedicated to serving the community through development projects and 
-              effective representation.
-            </p>
-          </div>
+    <footer className="bg-gray-900 text-white pt-12 pb-6 w-full">
+      <div className="w-full px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+      
 
           {/* Quick Links */}
           <div>

@@ -3,7 +3,7 @@ import Hero from './Hero';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen w-full overflow-x-hidden bg-gray-50">
       <Hero />
 
       {/* Quick Highlights - Full Width */}

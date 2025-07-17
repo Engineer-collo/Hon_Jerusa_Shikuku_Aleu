@@ -11,10 +11,9 @@ import Contact from './Contact';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div style={{ padding: '6rem 2rem 2rem 2rem', fontFamily: 'sans-serif', maxWidth: 900, margin: '0 auto' }}>
-        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>MCA Portfolio App</h1>
-        <div style={{ fontSize: '1.1rem', color: '#444', marginTop: '2rem' }}>
+      <div className="min-h-screen w-full overflow-x-hidden bg-gray-50 flex flex-col">
+        <Navbar />
+        <div className="flex-1 flex flex-col">
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
