@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import { FaBook, FaClinicMedical, FaRoad, FaChartLine, FaTractor } from 'react-icons/fa';
 
 const Manifesto = () => {
@@ -55,8 +57,19 @@ const Manifesto = () => {
     }
   };
 
+  const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <>
+      <Helmet>
+        <title>Leadership Manifesto | Milima Ward</title>
+        <meta name="description" content="Hon. Jerusa Shikuku Aleu's comprehensive plan for the transformation of Milima Ward." />
+        <meta name="keywords" content="Milima Ward, Manifesto, Leadership, Development, Bungoma County, Jerusa Shikuku Aleu" />
+        <meta name="author" content="Hon. Jerusa Shikuku Aleu" />
+        <meta property="og:title" content="Leadership Manifesto | Milima Ward" />
+        <meta property="og:description" content="Comprehensive manifesto for Milima Ward by Hon. Jerusa Shikuku Aleu." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -123,12 +136,16 @@ const Manifesto = () => {
           <p className="text-gray-600 mb-6">
             Have questions about our manifesto or want to get involved?
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300">
+          <button
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300"
+            onClick={() => navigate('/contact')}
+          >
             Contact Our Office
           </button>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

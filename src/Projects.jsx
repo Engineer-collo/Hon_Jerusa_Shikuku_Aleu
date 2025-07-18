@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { FaSchool, FaClinicMedical, FaRoad, FaTractor, FaFutbol, FaHandsHelping } from 'react-icons/fa';
 
 const Project = () => {
@@ -161,6 +162,15 @@ const Project = () => {
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Development Projects
           </h1>
+          <Helmet>
+            <title>Development Projects | Milima Ward</title>
+            <meta name="description" content="Explore development, education, healthcare, infrastructure, agriculture, sports, and social support projects in Milima Ward." />
+            <meta name="keywords" content="Milima Ward, Projects, Development, Education, Healthcare, Infrastructure, Agriculture, Sports, Social Support, Bungoma County" />
+            <meta name="author" content="Hon. Jerusa Shikuku Aleu" />
+            <meta property="og:title" content="Development Projects | Milima Ward" />
+            <meta property="og:description" content="Comprehensive list of completed and ongoing projects in Milima Ward by Hon. Jerusa Shikuku Aleu." />
+            <meta property="og:type" content="website" />
+          </Helmet>
           <div className="w-24 h-1 bg-gray-300 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Hon. Jerusa Shikuku Aleu's tangible contributions to Milima Ward through completed and ongoing development projects
