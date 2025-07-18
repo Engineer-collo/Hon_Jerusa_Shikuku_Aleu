@@ -101,7 +101,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Hon. Jerusa Shikuku Aleu - MCA Milima Ward. All rights reserved.
           </p>
           <p className="mt-2 text-sm">
-            Designed and developed with ❤️ for the people of Milima Ward.
+            Designed and developed by brian iraru for the people of Milima Ward.
           </p>
         </div>
       </div>
