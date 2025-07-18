@@ -17,12 +17,9 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Mobile Navbar Header */}
+      {/* Mobile Menu Toggle */}
       <div className="md:hidden p-4 flex justify-between items-center bg-blue-900 text-white">
-        <h1 className="text-xl font-bold">
-          <Link to="/" className="hover:text-amber-400 transition">Hon. Jerusa Shikuku Aleu
-          </Link>
-        </h1>
+        <h1 className="text-xl font-bold">My Site</h1>
         <button onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
@@ -52,15 +49,8 @@ const Navbar = () => {
       )}
 
       {/* Desktop Navbar */}
-      <div className="hidden md:flex items-center justify-between bg-blue-900 text-white py-4 px-10">
-        {/* Logo */}
-        <div className="text-2xl font-bold">
-          <Link to="/" className="hover:text-amber-400 transition">Hon. Jerusa Shikuku Aleu
-          </Link>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex gap-12">
+      <div className="hidden md:flex justify-center bg-blue-900 text-white py-4">
+        <div className="flex gap-16 text-center">
           <Link to="/" className="flex flex-col items-center hover:text-amber-400 transition">
             <FaHome size={20} />
             <span className="mt-1 text-sm">Home</span>

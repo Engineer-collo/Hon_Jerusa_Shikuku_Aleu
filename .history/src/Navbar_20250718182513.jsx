@@ -20,8 +20,7 @@ const Navbar = () => {
       {/* Mobile Navbar Header */}
       <div className="md:hidden p-4 flex justify-between items-center bg-blue-900 text-white">
         <h1 className="text-xl font-bold">
-          <Link to="/" className="hover:text-amber-400 transition">Hon. Jerusa Shikuku Aleu
-          </Link>
+          <Link to="/" className="hover:text-amber-400 transition"></Link>
         </h1>
         <button onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -55,8 +54,7 @@ const Navbar = () => {
       <div className="hidden md:flex items-center justify-between bg-blue-900 text-white py-4 px-10">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <Link to="/" className="hover:text-amber-400 transition">Hon. Jerusa Shikuku Aleu
-          </Link>
+          <Link to="/" className="hover:text-amber-400 transition">Hon. Aleu</Link>
         </div>
 
         {/* Navigation */}

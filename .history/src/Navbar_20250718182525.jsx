@@ -55,8 +55,7 @@ const Navbar = () => {
       <div className="hidden md:flex items-center justify-between bg-blue-900 text-white py-4 px-10">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <Link to="/" className="hover:text-amber-400 transition">Hon. Jerusa Shikuku Aleu
-          </Link>
+          <Link to="/" className="hover:text-amber-400 transition"></Link>
         </div>
 
         {/* Navigation */}
