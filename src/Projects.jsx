@@ -7,7 +7,7 @@ const projectImages = [
       'Hon. Jerusa Aleu Shikuku recently held a meaningful and inspiring meeting with a group of boda boda operators from Milima Ward, a vital segment of the local economy. During the gathering, she expressed deep appreciation for their hard work, resilience, and contribution to community mobility and livelihoods. The meeting was not only a chance to listen to their daily challenges — such as insecurity, poor road conditions, and high fuel costs — but also an opportunity to explore practical solutions together. Hon. Jerusa assured them of her commitment to championing improved infrastructure, better safety measures, and affordable training programs to empower riders both economically and socially. The boda boda operators welcomed her engagement with open arms, praising her for being a leader who listens, acts, and walks hand in hand with the people on the ground. It was a powerful moment that reinforced her reputation as a grassroots leader dedicated to inclusive development and youth empowerment.',
   },
   {
-    src: '/roads.jpeg',
+    src: '/roads.png',
     description:
       "Grading, Gravelling and Murraming of Makunga -Kwena Road in progress. Nabing'eng'e village unit contractor will be on the site on Monday.",
   },
