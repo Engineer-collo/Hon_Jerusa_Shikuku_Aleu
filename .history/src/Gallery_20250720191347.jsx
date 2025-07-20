@@ -10,7 +10,6 @@ const imageList = [
   '/Fertilizers.jpeg',
   '/hospitals.jpeg',
   '/maizeseed.jpeg',
-
   '/mourning.jpeg',
   '/roadproject.jpeg',
   '/roads.png',
