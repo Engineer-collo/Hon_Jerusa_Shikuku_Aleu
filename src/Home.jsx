@@ -206,7 +206,7 @@ const Home = () => {
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="/roads.jpeg" 
+                    src="/roads.png" 
                     alt="Makunga-Kwena Road Works" 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     onError={e => {e.target.onerror=null; e.target.src='/commuty1.jpeg';}}

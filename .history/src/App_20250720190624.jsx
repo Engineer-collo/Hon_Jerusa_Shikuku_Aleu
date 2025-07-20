@@ -7,7 +7,6 @@ import About from './About';
 import Projects from './Projects';
 import Manifesto from './Manifesto';
 import Contact from './Contact';
-import Gallery from './Gallery'
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/manifesto" element={<Manifesto />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/gallery" element={<Galler />} />
 
           </Routes>
         </div>

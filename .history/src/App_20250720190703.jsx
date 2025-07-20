@@ -7,7 +7,7 @@ import About from './About';
 import Projects from './Projects';
 import Manifesto from './Manifesto';
 import Contact from './Contact';
-import Gallery from './Gallery'
+import Gallery from './'
 
 function App() {
   return (
