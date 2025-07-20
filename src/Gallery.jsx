@@ -1,43 +1,52 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import agricultureImg from './assets/Agriculture.jpeg';
 
 const imageList = [
-  {
-    src: agricultureImg,
-    alt: 'Agriculture Project',
-  },
-  // Add more images like:
-  // { src: anotherImage, alt: 'Another Slide' }
+  'Agriculture.jpeg',
+  'bodaboda.jpeg',
+  'ceremony.jpeg',
+  'commuty.jpeg',
+  'commuty2.jpeg',
+  'Fertilizers.jpeg',
+  'hospitals.jpeg',
+  'maizeseed.jpeg',
+  'mourning.jpeg',
+  'roadproject.jpeg',
+  'roads.png',
+  'sports.jpeg',
+  'visting.jpeg',
 ];
 
-const Gallery = () => {
+const ImageGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % imageList.length);
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? imageList.length - 1 : prev - 1));
   };
 
-  const prevImage = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? imageList.length - 1 : prev - 1
-    );
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev === imageList.length - 1 ? 0 : prev + 1));
   };
 
   return (
-    <section className="w-full min-h-[70vh] flex items-center justify-center bg-gray-900 py-12 px-6">
-      <div className="relative w-full max-w-4xl flex items-center justify-center">
-        {/* Image */}
-        <img
-          src={imageList[currentIndex].src}
-          alt={imageList[currentIndex].alt}
-          className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-        />
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 text-center">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
+        Hon. Jerusa Aleu in Action
+      </h2>
+
+      <div className="relative max-w-3xl mx-auto">
+        <div className="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={`/${imageList[currentIndex]}`}
+            alt={`Jerusa event ${currentIndex + 1}`}
+            className="w-full h-96 object-cover transition duration-500 ease-in-out"
+          />
+        </div>
 
         {/* Prev Button */}
         <button
           onClick={prevImage}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-900 p-3 rounded-full shadow hover:bg-gray-200"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow-md"
         >
           <FaChevronLeft size={20} />
         </button>
@@ -45,13 +54,17 @@ const Gallery = () => {
         {/* Next Button */}
         <button
           onClick={nextImage}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-900 p-3 rounded-full shadow hover:bg-gray-200"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow-md"
         >
           <FaChevronRight size={20} />
         </button>
       </div>
-    </section>
+
+      <p className="text-sm text-gray-600 mt-4">
+        Image {currentIndex + 1} of {imageList.length}
+      </p>
+    </div>
   );
 };
 
-export default Gallery;
+export default ImageGallery;
